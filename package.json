@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "dev:mock": "cross-env PET_MOCK=mock npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,10 +19,19 @@
   },
   "homepage": "https://github.com/leandroleo2/adopt-me#readme",
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@frontendmasters/pet": "^1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  }
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions"
+  ]
 }
